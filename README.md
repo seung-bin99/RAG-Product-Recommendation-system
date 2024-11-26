@@ -60,6 +60,7 @@
 > - 계산 방법: 각 예측 문장에 대해 모든 참조 문장과의 코사인 유사도를 계산. 각 예측 문장에 대해 최대 유사도를 찾아 총합. 쿼리 수로 나누어 평균을 구함.
 > - 의미: 평균 코사인 유사도가 1에 가까울수록 예측과 참조 문장이 유사함을 나타냄.
 
+### 사용 Dataset
 #### Amazon sales 데이터
 > **[Amazon sales dataset](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset)**
 
