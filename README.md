@@ -45,12 +45,12 @@
 4. MRR 및 코사인 유사도 계산: 각 예측 문장에 대해 검증 문장과의 유사도를 계산하고, 관련성이 높은 문장의 순위를 반영하여 MRR을 업데이트. 최대 유사도를 누적하여 평균 코사인 유사도를 계산.
 
 - Mean Reciprocal Rank (MRR) : 사용자의 쿼리에 대한 가장 관련성 높은 결과의 순위의 역수를 평균한 값.
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/55a7dc24-a653-40c0-8ae6-e64a38899ce3/8e83191f-9755-4526-8fab-8b2e74185fb5/image.png)
+![image (4)](https://github.com/user-attachments/assets/3846d604-b3af-46ab-8ce9-14e6298c2e17)
 > - 계산 방법: 각 쿼리에서 가장 관련성이 높은 결과의 순위를 찾고, 그 순위의 역수를 구함. 여러 쿼리에 대해 평균을 계산.
 > - 의미: MRR이 1에 가까울수록 시스템이 관련성 높은 결과를 잘 제공함을 의미.
 
 - 평균 코사인 유사도 (Average Cosine Similarity) : 예측된 문장과 참조 문장 간의 유사성을 측정하는 지표.
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/55a7dc24-a653-40c0-8ae6-e64a38899ce3/54ed5d21-8ed5-4f0e-adda-8b323ef7a940/image.png)
+![image (3)](https://github.com/user-attachments/assets/4f032a1b-4b0a-494b-9a00-839b74d123a0)
 > - 계산 방법: 각 예측 문장에 대해 모든 참조 문장과의 코사인 유사도를 계산. 각 예측 문장에 대해 최대 유사도를 찾아 총합. 쿼리 수로 나누어 평균을 구함.
 > - 의미: 평균 코사인 유사도가 1에 가까울수록 예측과 참조 문장이 유사함을 나타냄.
 
