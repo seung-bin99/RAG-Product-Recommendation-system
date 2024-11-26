@@ -1,5 +1,5 @@
 # RAG-Product-Recommendation-system
-* 현재 진행중
+ * 현재 진행중
 ## 사용자가 질문하면 필요한 제품을 추천해주는 RAG 추천 시스템
 ### 캐글의 Amazon sales & E-commerce behavior dataset 사용
 
@@ -16,12 +16,12 @@
 #### 역할 세부 내용
 1) 캐글에서 Amazon sales & E-commerce behavior dataset 수집
 2) E-commerce 쇼핑몰 로그 데이터 퍼널, RFM 분석
- * 13개의 고객 그룹 segmentation
+  * 13개의 고객 그룹 segmentation
 3) E-commerce 데이터를 유저 상태에 따라 전처리
- * 구매 유저 : 세션 기간에 따른 clustering + RFM 분석 적용 고객 세분화
- * 구매하지 않은 유저 : 세션 기간에 따른 clustering
+  * 구매 유저 : 세션 기간에 따른 clustering + RFM 분석 적용 고객 세분화
+  * 구매하지 않은 유저 : 세션 기간에 따른 clustering
 4) E-commerce 데이터와 유사한 데이터 처리위해 Amazon 사용자 행동 데이터에서 필요한 변수 전처리
- * 카테고리 / 제품 id / 제품명 / 할인가 / 원가 추출
+  * 카테고리 / 제품 id / 제품명 / 할인가 / 원가 추출
 5) BAAI/bge-m3 임베딩 모델을 사용해 두개의 데이터를 벡터 임베딩 한 후, Chroma 벡터 데이터베이스에 저장
 6) Chroma에서 임베딩 벡터 불러와 MMR 검색 방식의 Retriever 생성
 7) Gemma-7b LLM 모델을 활용해 Prompt 설정 후, RAG Chain 생성해 사용자 질문에 문장으로 제품을 추천하도록 구현
@@ -44,7 +44,7 @@
 2. 문장 분리: 예측 결과와 검증 결과를 문장 단위로 나눔.
 3. 임베딩 생성: 각 문장을 임베딩하여 벡터로 변환.
 4. MRR 및 코사인 유사도 계산: 각 예측 문장에 대해 검증 문장과의 유사도를 계산하고, 관련성이 높은 문장의 순위를 반영하여 MRR을 업데이트. 최대 유사도를 누적하여 평균 코사인 유사도를 계산.
- * Predict Result, Reference Result 답변 문장 결과 기반 성능 평가 시, 어느 정도 고른 성능 결과를 볼 수 있음.
+  * Predict Result, Reference Result 답변 문장 결과 기반 성능 평가 시, 어느 정도 고른 성능 결과를 볼 수 있음.
 
 #### 성능 지표
 
