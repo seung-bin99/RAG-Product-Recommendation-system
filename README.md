@@ -10,12 +10,20 @@
 - 각 전처리 된 데이터를 임베딩 모델을 사용해 벡터 임베딩 한 후, Chroma나 FAISS 벡터 데이터베이스에 저장
 - LLM 모델을 사용해 벡터 데이터베이스 기반 QnA 챗봇 개발 및 검증
 
+#### 문제 정의
+- 쇼핑 플랫폼 운영 중, 매출이 줄고있음
+#### 가설 설정
+- 가설 1 : 고객들이 해당 플랫폼에 방문율이 감소하고 있을 것이다.(X)
+- 가설 2 : 고객들이 제품을 살펴보지만, 높은 가격으로 인해 구매를 하지않을 것이다.(O)
+
 #### 데이터 수집
 - 캐글의 Amazon sales & E-commerce behavior dataset 다운
 
 #### 역할 세부 내용
 1) 캐글에서 Amazon sales & E-commerce behavior dataset 수집
-2) E-commerce 쇼핑몰 로그 데이터 퍼널, RFM 분석
+2) E-commerce 쇼핑몰 로그 데이터 기반 DAU 계산, 퍼널분석, Kruskal-Wallis 거쳐 솔루션 아이디어 도출
+- 솔루션 적용
+4) E-commerce 쇼핑몰 로그 데이터 RFM 분석
 > - 13개의 고객 그룹 segmentation
 3) E-commerce 데이터를 유저 상태에 따라 전처리
 > - 구매 유저 : 세션 기간에 따른 clustering + RFM 분석 적용 고객 세분화
