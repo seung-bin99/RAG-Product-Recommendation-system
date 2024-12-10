@@ -22,18 +22,18 @@
 #### 역할 세부 내용
 1) 캐글에서 Amazon sales & E-commerce behavior dataset 수집
 2) E-commerce 쇼핑몰 로그 데이터 기반 DAU 계산, 퍼널분석, Kruskal-Wallis 거쳐 솔루션 아이디어 도출
-- 솔루션 적용
-4) E-commerce 쇼핑몰 로그 데이터 RFM 분석
+- 솔루션 적용 단계
+3) E-commerce 쇼핑몰 로그 데이터 RFM 분석
 > - 13개의 고객 그룹 segmentation
-3) E-commerce 데이터를 유저 상태에 따라 전처리
+4) E-commerce 데이터를 유저 상태에 따라 전처리
 > - 구매 유저 : 세션 기간에 따른 clustering + RFM 분석 적용 고객 세분화
 > - 구매하지 않은 유저 : 세션 기간에 따른 clustering
-4) E-commerce 데이터와 유사한 데이터 처리위해 Amazon 사용자 행동 데이터에서 필요한 변수 전처리
+5) E-commerce 데이터와 유사한 데이터 처리위해 Amazon 사용자 행동 데이터에서 필요한 변수 전처리
 > - 카테고리 / 제품 id / 제품명 / 할인가 / 원가 추출
-5) BAAI/bge-m3 임베딩 모델을 사용해 두개의 데이터를 벡터 임베딩 한 후, Chroma 벡터 데이터베이스에 저장
-6) Chroma에서 임베딩 벡터 불러와 MMR 검색 방식의 Retriever 생성
-7) Gemma-7b LLM 모델을 활용해 Prompt 설정 후, RAG Chain 생성해 사용자 질문에 문장으로 제품을 추천하도록 구현
-8) MRR과 평균 코사인 유사도로 성능 검증
+6) BAAI/bge-m3 임베딩 모델을 사용해 두개의 데이터를 벡터 임베딩 한 후, Chroma 벡터 데이터베이스에 저장
+7) Chroma에서 임베딩 벡터 불러와 MMR 검색 방식의 Retriever 생성
+8) Gemma-7b LLM 모델을 활용해 Prompt 설정 후, RAG Chain 생성해 사용자 질문에 문장으로 제품을 추천하도록 구현
+9) MRR과 평균 코사인 유사도로 성능 검증
 > - Predict 데이터 셋 : Amazon 임베딩 벡터
 > - 검증 데이터 셋 : E-commerce 임베딩 벡터
 
