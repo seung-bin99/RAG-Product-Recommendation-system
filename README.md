@@ -41,6 +41,8 @@
 ![image](https://github.com/user-attachments/assets/f14feb94-4493-408b-ace5-8011a208f673)
 
 ### 분석 과정
+![퍼널분석](https://github.com/user-attachments/assets/d647a434-bc4e-4ebf-83f7-3fc65878d05b)
+![세 집단 비교 분석](https://github.com/user-attachments/assets/661ec491-99bb-4031-b3c1-87e0463fb5f8)
 ![RFM 분포 확인](https://github.com/user-attachments/assets/4f86c992-bac9-4b1d-b898-beb5991db79f)
 ![RFM 분석 적용한 고객 Segmentation](https://github.com/user-attachments/assets/38f7c369-d06c-49bb-a8dc-77eefee0086b)
 
