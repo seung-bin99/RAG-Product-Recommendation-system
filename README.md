@@ -21,7 +21,7 @@
 
 #### 역할 세부 내용
 1) 캐글에서 Amazon sales & E-commerce behavior dataset 수집
-2) E-commerce 쇼핑몰 로그 데이터 기반 DAU 계산, 퍼널분석, Kruskal-Wallis 거쳐 솔루션 아이디어 도출
+2) E-commerce 쇼핑몰 로그 데이터 기반 DAU 계산, 퍼널분석, Kruskal-Wallis 분석거쳐 솔루션 아이디어 도출
 - 솔루션 적용 단계
 3) E-commerce 쇼핑몰 로그 데이터 RFM 분석
 > - 13개의 고객 그룹 segmentation
