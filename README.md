@@ -31,7 +31,7 @@
 5) E-commerce 데이터와 유사한 데이터 처리위해 Amazon 사용자 행동 데이터에서 필요한 변수 전처리
 > - 카테고리 / 제품 id / 제품명 / 할인가 / 원가 추출
 6) BAAI/bge-m3 임베딩 모델을 사용해 두개의 데이터를 벡터 임베딩 한 후, Chroma 벡터 데이터베이스에 저장
-7) Chroma에서 임베딩 벡터 불러와 MMR 검색 방식의 Retriever 생성
+7) Chroma에서 임베딩 벡터 불러와 MMR 검색 방식의 Retriever와 유저 정보(구매 / 구매 X) 기반 Ensemble Retriever 설정
 8) Gemma-7b LLM 모델을 활용해 Prompt 설정 후, RAG Chain 생성해 사용자 질문에 문장으로 제품을 추천하도록 구현
 9) MRR과 평균 코사인 유사도로 성능 검증
 > - Predict 데이터 셋 : Amazon 임베딩 벡터
