@@ -41,6 +41,7 @@
 ![image](https://github.com/user-attachments/assets/f14feb94-4493-408b-ace5-8011a208f673)
 
 ### 분석 과정
+![주별 리텐션](https://github.com/user-attachments/assets/1c4ee387-a970-45a9-b2de-8966bdaa794f)
 ![퍼널분석](https://github.com/user-attachments/assets/d647a434-bc4e-4ebf-83f7-3fc65878d05b)
 ![세 집단 비교 분석](https://github.com/user-attachments/assets/661ec491-99bb-4031-b3c1-87e0463fb5f8)
 ![RFM 분포 확인](https://github.com/user-attachments/assets/4f86c992-bac9-4b1d-b898-beb5991db79f)
