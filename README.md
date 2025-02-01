@@ -1,5 +1,4 @@
 # RAG-Product-Recommendation-system
-> - 현재 진행중
 ## 사용자가 질문하면 필요한 제품을 추천해주는 RAG 추천 시스템
 ### 캐글의 Amazon sales & E-commerce behavior dataset 사용
 
